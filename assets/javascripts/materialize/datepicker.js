@@ -708,14 +708,14 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     }, {
       key: '_handleInputClick',
       value: function _handleInputClick() {
-        this.open();
+        setTimeout(() => this.open(), 100);
       }
     }, {
       key: '_handleInputKeydown',
       value: function _handleInputKeydown(e) {
         if (e.which === M.keys.ENTER) {
           e.preventDefault();
-          this.open();
+          setTimeout(() => this.open(), 100);
         }
       }
     }, {
